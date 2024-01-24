@@ -1,0 +1,11 @@
+.out{
+    background-color: grey;
+    height: 60px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+    padding-right: 10px;
+    font-size:x-large;
+    font-weight: bold;
+    color: white;
+}

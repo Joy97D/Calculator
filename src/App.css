@@ -1,7 +1,18 @@
 .App {
   text-align: center;
+  /* background-color: cyan; */
+  height: 1000px;
+  padding-top : 130px;
 }
-
+.dsad{
+  /* padding-top: 20px; */
+  background-color: whitesmoke;
+  height: 335px;
+  align-items: center;
+  text-align: center;
+  margin-left: 40%;
+  margin-right: 41%;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -11,6 +22,30 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+.button{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height:55px;
+  width: 75px;
+}
+.button-2{
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  height:55px;
+  width: 150px;
+}
+.button-orange{
+  height:55px;
+  width: 75px;
+  background-color: orange;
+}
+.section{
+  display: flex;
+  /* justify-items: ; */
+  /* background-color: brown; */
 }
 
 .App-header {
