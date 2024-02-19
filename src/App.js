@@ -30,7 +30,7 @@ function App() {
         setfirst(first+(val))
       }
       else if(dec && first<0){
-        setfirst(first-(val))
+        setfirst(first+(val))
       }
     }
     else if(firstset){
@@ -40,8 +40,13 @@ function App() {
       }
        if(val==='.')
        {
+        if(second===null){
+          setsecond('0.')
+          setdec(true)
+        }
+        else{
          setsecond(second+val)
-         setdec(true)
+         setdec(true)}
        }
        else if(!dec && second >=0){
        setsecond((second*10)+val)}
@@ -50,10 +55,10 @@ function App() {
         setsecond((second*10)-val)
        }
        else if(dec && second >=0){
-        setsecond(second+(val))
+        setsecond(second+(val)) 
       }
       else if(dec && second<0){
-        setsecond(second-(val))
+        setsecond(second+(val))
       }
     }
   }
@@ -184,7 +189,6 @@ function App() {
             setfirst(result)
             setfirstset(true)
             setdec(false) 
-            // setfirst(result)
             setoperation('X')}
             else if(first!==0){
               setfirstset(true)
@@ -200,11 +204,9 @@ function App() {
           <button className='button-orange'  onClick={()=>
            {
             if(cal){
-              console.log(result)
             setfirst(result)
             setfirstset(true)
             setdec(false) 
-            // setfirst(result)
             setoperation('-')}
             else if(first!==0){
               setfirstset(true)
@@ -224,7 +226,6 @@ function App() {
             setfirst(result)
             setfirstset(true)
             setdec(false) 
-            // setfirst(result)
             setoperation('+')}
             else if(first!==0){
               setfirstset(true)
